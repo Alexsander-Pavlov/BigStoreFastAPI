@@ -277,6 +277,16 @@ STRIPE_API=some_stripe:api # API_KEY stripe платежная система
 Для получения API_KEY Stripe вам нужно перейти на официальную страницу Stripe [link](https://stripe.com)
 и зарегистрироваться, в последствии вы получите ключи для API.
 
+## Certifications
+- Создание приватного ключа
+```bash
+openssl genrsa -out jwt-private.pem 2048
+```
+
+- Создание публичного ключа на основе приватного
+```bash
+openssl rsa -in jwt-private.pem -outform PEM -pubout -out jwt-public.pem
+```
 
 ## Docker
 Проект находится под системой контеризации Docker
