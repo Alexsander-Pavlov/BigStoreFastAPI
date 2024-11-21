@@ -278,6 +278,11 @@ STRIPE_API=some_stripe:api # API_KEY stripe платежная система
 и зарегистрироваться, в последствии вы получите ключи для API.
 
 ## Certifications
+- Перейдите в папку сертификатов
+```bash
+cd certs
+```
+
 - Создание приватного ключа
 ```bash
 openssl genrsa -out jwt-private.pem 2048
